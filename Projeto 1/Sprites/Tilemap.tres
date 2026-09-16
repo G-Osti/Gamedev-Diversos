@@ -1,0 +1,94 @@
+[gd_resource type="TileSet" load_steps=6 format=3 uid="uid://djibpvem0kh3n"]
+
+[ext_resource type="Texture2D" uid="uid://dbg2dhmv6wwxl" path="res://Sprites/Blocks.png" id="1_friyp"]
+[ext_resource type="Texture2D" uid="uid://odp8bhhqpfu0" path="res://Sprites/SelectionUI32.png" id="2_bsqd4"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_i50f5"]
+tile_data = PackedInt32Array(0, 11, 0)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_twdgu"]
+texture = ExtResource("2_bsqd4")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -8)
+1:0/0 = 0
+1:0/0/texture_origin = Vector2i(0, -8)
+2:0/0 = 0
+2:0/0/texture_origin = Vector2i(0, -8)
+3:0/0 = 0
+3:0/0/texture_origin = Vector2i(0, -8)
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, -8)
+5:0/0 = 0
+5:0/0/texture_origin = Vector2i(0, -8)
+6:0/0 = 0
+6:0/0/texture_origin = Vector2i(0, -8)
+7:0/0 = 0
+7:0/0/texture_origin = Vector2i(0, -8)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k2gxt"]
+resource_name = "Terrenos"
+texture = ExtResource("1_friyp")
+texture_region_size = Vector2i(32, 32)
+0:0/next_alternative_id = 3
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -8)
+0:0/0/custom_data_0 = "Areia"
+4:0/next_alternative_id = 2
+4:0/0 = 0
+4:0/0/texture_origin = Vector2i(0, -8)
+4:0/0/custom_data_0 = "Areia"
+0:1/0 = 0
+0:1/0/texture_origin = Vector2i(0, -8)
+0:1/0/custom_data_0 = "Terra"
+4:1/0 = 0
+4:1/0/texture_origin = Vector2i(0, -8)
+4:1/0/custom_data_0 = "Azulejo"
+0:2/0 = 0
+0:2/0/texture_origin = Vector2i(0, -8)
+0:2/0/custom_data_0 = "Grama"
+4:2/0 = 0
+4:2/0/texture_origin = Vector2i(0, -8)
+4:2/0/custom_data_0 = "Tábuas"
+0:3/0 = 0
+0:3/0/texture_origin = Vector2i(0, -8)
+0:3/0/custom_data_0 = "Rocha"
+4:3/0 = 0
+4:3/0/texture_origin = Vector2i(0, -8)
+4:3/0/custom_data_0 = "Pedras"
+0:5/0 = 0
+0:5/0/texture_origin = Vector2i(0, -8)
+0:5/0/custom_data_0 = "Água"
+0:6/0 = 0
+0:6/0/texture_origin = Vector2i(0, -8)
+0:6/0/custom_data_0 = "Lava"
+0:7/0 = 0
+0:7/0/texture_origin = Vector2i(0, -8)
+0:7/0/custom_data_0 = "Lava"
+0:4/0 = 0
+0:4/0/texture_origin = Vector2i(0, -8)
+0:4/0/custom_data_0 = "Água"
+4:4/0 = 0
+4:4/0/texture_origin = Vector2i(0, -8)
+4:4/0/custom_data_0 = "Mar"
+4:5/0 = 0
+4:5/0/texture_origin = Vector2i(0, -8)
+4:5/0/custom_data_0 = "Mar"
+4:6/0 = 0
+4:6/0/texture_origin = Vector2i(0, -8)
+4:6/0/custom_data_0 = "Magma"
+4:7/0 = 0
+4:7/0/texture_origin = Vector2i(0, -8)
+4:7/0/custom_data_0 = "Magma"
+
+[resource]
+tile_shape = 1
+tile_layout = 5
+tile_offset_axis = 1
+tile_size = Vector2i(32, 16)
+navigation_layer_0/layers = 1
+custom_data_layer_0/name = "Nome"
+custom_data_layer_0/type = 4
+sources/1 = SubResource("TileSetAtlasSource_k2gxt")
+sources/0 = SubResource("TileSetAtlasSource_twdgu")
+pattern_0 = SubResource("TileMapPattern_i50f5")

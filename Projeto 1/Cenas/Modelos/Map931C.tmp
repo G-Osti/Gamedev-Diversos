@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://b3ns64grtxfcm"]
+
+[ext_resource type="Script" path="res://Cenas/Modelos/Mapa.gd" id="2_fahcs"]
+[ext_resource type="PackedScene" uid="uid://bt6u6051yw3to" path="res://Cenas/Modelos/Camada.tscn" id="2_xy03y"]
+
+[node name="Mapa" type="Node2D"]
+y_sort_enabled = true
+texture_filter = 1
+script = ExtResource("2_fahcs")
+
+[node name="Camadas" parent="." instance=ExtResource("2_xy03y")]
+layer_0/tile_data = PackedInt32Array(0, 65537, 0, 65536, 393217, 0, 65537, 393217, 0, 1, 393217, 0, -65536, 65537, 0, -65535, 65537, 0, 65535, 65537, 0, 131071, 393217, 0, -1, 1, 0, -65538, 1, 0, -65537, 65537, 0, -131072, 65537, 0, -131071, 65537, 0, -2, 1, 0, 131070, 393217, 0, 65534, 65537, 0, 196606, 65537, 0, 196607, 65537, 0, 131072, 65537, 0, 131073, 65537, 0, 131074, 65537, 0, 65538, 65537, 0, 2, 393217, 0, -65534, 65537, 0, -131070, 65537, 0)
+layer_1/tile_data = PackedInt32Array(-65538, 65537, 0, -65539, 65537, 0, -131075, 65537, 0)
+
+[node name="Seletor" parent="." instance=ExtResource("2_xy03y")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.5, 1.5)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Camera2D"]
+follow_viewport_enabled = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Camera2D/CanvasLayer"]
+anchors_preset = -1
+anchor_left = -0.25
+anchor_top = -0.25
+anchor_right = -0.25
+anchor_bottom = -0.25
+scale = Vector2(0.5, 0.5)

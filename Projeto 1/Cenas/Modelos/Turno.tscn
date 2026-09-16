@@ -1,0 +1,52 @@
+[gd_scene load_steps=5 format=3 uid="uid://i6t0n7eyyg7s"]
+
+[ext_resource type="Texture2D" uid="uid://c2vv85fhn4l1k" path="res://Sprites/X.png" id="2_n8o0n"]
+[ext_resource type="Texture2D" uid="uid://ccfof8dibvlb8" path="res://Sprites/Cubinho Azul Borda.png" id="2_ssj3y"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vfbtn"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_vq8rr"]
+font_color = Color(0.807843, 0, 0.00392157, 1)
+
+[node name="Turno" type="Control"]
+custom_minimum_size = Vector2(0, 64)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.5, 0.5)
+
+[node name="Caixa" type="ColorRect" parent="."]
+visible = false
+layout_mode = 2
+offset_right = 180.0
+offset_bottom = 64.0
+color = Color(0.796078, 0.701961, 0, 0.819608)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_left = 4.0
+offset_right = 162.0
+offset_bottom = 64.0
+
+[node name="Imagem" type="TextureRect" parent="HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_ssj3y")
+
+[node name="Nome" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Objeto-1"
+label_settings = SubResource("LabelSettings_vfbtn")
+
+[node name="Turno" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "34"
+label_settings = SubResource("LabelSettings_vq8rr")
+
+[node name="Imagem2" type="TextureRect" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 4.0
+offset_right = 68.0
+offset_bottom = 64.0
+texture = ExtResource("2_n8o0n")

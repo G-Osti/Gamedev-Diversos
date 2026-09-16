@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://dck321xhf4oh5"]
+
+[ext_resource type="Script" path="res://Componentes/espada.gd" id="1_3tmpd"]
+
+[node name="CaixaColisao" type="Area2D"]
+script = ExtResource("1_3tmpd")

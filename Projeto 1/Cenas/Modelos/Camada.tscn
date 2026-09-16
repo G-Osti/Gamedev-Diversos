@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://bt6u6051yw3to"]
+
+[ext_resource type="TileSet" uid="uid://djibpvem0kh3n" path="res://Sprites/Tilemap.tres" id="1_3djpr"]
+
+[node name="Camada" type="TileMap"]
+y_sort_enabled = true
+position = Vector2(-32, -16)
+tile_set = ExtResource("1_3djpr")
+format = 2
+layer_0/name = "Base"
+layer_0/y_sort_enabled = true
+layer_0/navigation_enabled = false
+layer_1/name = "Efeitos"
+layer_1/y_sort_enabled = true
+layer_1/tile_data = PackedInt32Array()
+layer_2/name = "Aviso"
+layer_2/y_sort_enabled = true
+layer_2/tile_data = PackedInt32Array()
+layer_3/name = "Movimentos"
+layer_3/y_sort_enabled = true
+layer_3/navigation_enabled = false
+layer_3/tile_data = PackedInt32Array()
+layer_4/name = "Seletor"
+layer_4/y_sort_enabled = true
+layer_4/navigation_enabled = false
+layer_4/tile_data = PackedInt32Array()
+layer_5/name = "Preview"
+layer_5/y_sort_enabled = true
+layer_5/navigation_enabled = false
+layer_5/tile_data = PackedInt32Array()
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+visible = false

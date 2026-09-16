@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://by6lg61e5moxa"]
+
+[ext_resource type="PackedScene" uid="uid://dck321xhf4oh5" path="res://Componentes/caixa_colisao.tscn" id="1_6kq3k"]
+[ext_resource type="PackedScene" uid="uid://5svomxwl0go5" path="res://Componentes/vida.tscn" id="2_n1g2v"]
+
+[node name="EntidadeJogavel" type="CharacterBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="CaixaColisao" parent="." instance=ExtResource("1_6kq3k")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CaixaColisao"]
+
+[node name="Vida" parent="." instance=ExtResource("2_n1g2v")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

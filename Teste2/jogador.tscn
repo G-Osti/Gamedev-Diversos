@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=3 uid="uid://du8ri3ot86y1j"]
+
+[ext_resource type="Script" path="res://Padrao/Jogador.gd" id="1_0dx2x"]
+[ext_resource type="PackedScene" uid="uid://b58immy7xuy7j" path="res://espada.tscn" id="2_nwv3n"]
+[ext_resource type="Texture2D" uid="uid://b3g6iipl4gyfv" path="res://Sprites/Quadrado.png" id="3_hp2ld"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cx7jw"]
+size = Vector2(128, 128)
+
+[node name="Jogador" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_0dx2x")
+
+[node name="Espada" parent="." instance=ExtResource("2_nwv3n")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cx7jw")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+self_modulate = Color(0.113725, 0.415686, 1, 1)
+texture = ExtResource("3_hp2ld")
+
+[connection signal="fim" from="Espada" to="." method="_on_espada_fim"]

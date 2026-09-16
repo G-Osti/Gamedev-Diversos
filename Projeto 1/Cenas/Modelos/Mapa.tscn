@@ -1,0 +1,423 @@
+[gd_scene load_steps=24 format=3 uid="uid://b3ns64grtxfcm"]
+
+[ext_resource type="Script" path="res://Scripts/mapa.gd" id="1_j87mr"]
+[ext_resource type="PackedScene" uid="uid://bt6u6051yw3to" path="res://Cenas/Modelos/Camada.tscn" id="2_xy03y"]
+[ext_resource type="Texture2D" uid="uid://ccfof8dibvlb8" path="res://Sprites/Cubinho Azul Borda.png" id="3_2bmhb"]
+[ext_resource type="Texture2D" uid="uid://b2afwfe85pog1" path="res://Sprites/Icones1.png" id="3_ku04x"]
+[ext_resource type="Texture2D" uid="uid://yhhcne3fexid" path="res://icones.tres" id="3_q4y53"]
+[ext_resource type="Texture2D" uid="uid://d2bjt4rclxnfh" path="res://Sprites/Icones.png" id="4_b2f2g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kip3x"]
+atlas = ExtResource("3_ku04x")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qc5xo"]
+atlas = ExtResource("3_ku04x")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3iw7o"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yr3ye"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sewe6"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(64, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ur06x"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g3x2o"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(96, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cn0qx"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_scvmj"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wlfvm"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(64, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3j5ig"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(96, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0glpb"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eu0tb"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7a2ok"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(64, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4e72"]
+atlas = ExtResource("4_b2f2g")
+region = Rect2(96, 96, 32, 32)
+
+[sub_resource type="LabelSettings" id="LabelSettings_n13uw"]
+font_size = 12
+
+[sub_resource type="LabelSettings" id="LabelSettings_jynjx"]
+font_size = 12
+
+[node name="Mapa" type="Node2D"]
+y_sort_enabled = true
+texture_filter = 1
+script = ExtResource("1_j87mr")
+
+[node name="Camada" parent="." instance=ExtResource("2_xy03y")]
+position = Vector2(-16, -8)
+layer_0/tile_data = PackedInt32Array(0, 1, 3, 65536, 1, 1, 131072, 1, 2, 196608, 1, 2, 262144, 1, 2, 327680, 1, 1, 1, 1, 1, 65537, 1, 3, 131073, 1, 2, 196609, 1, 2, 262145, 1, 2, 327681, 1, 1, 2, 1, 2, 65538, 1, 2, 131074, 1, 2, 196610, 1, 2, 262146, 1, 2, 327682, 1, 3, 3, 1, 2, 65539, 1, 2, 131075, 1, 2, 196611, 1, 2, 262147, 1, 2, 327683, 1, 2, 4, 1, 2, 65540, 1, 2, 131076, 1, 2, 196612, 1, 1, 262148, 1, 2, 327684, 1, 2, 5, 1, 3, 65541, 1, 3, 131077, 1, 2, 196613, 1, 1, 262149, 1, 1, 327685, 1, 1, -327686, 1, 2, -262150, 1, 2, -196614, 1, 2, -131078, 1, 2, -65542, 1, 2, -6, 1, 2, 65530, 1, 2, 131066, 1, 2, 196602, 1, 2, 262138, 1, 3, -327685, 1, 2, -262149, 1, 2, -196613, 1, 2, -131077, 1, 2, -65541, 1, 2, -5, 1, 2, 65531, 1, 2, 131067, 1, 2, 196603, 1, 2, 262139, 1, 2, 327675, 1, 3, -327684, 1, 2, -262148, 1, 2, -196612, 1, 2, -131076, 1, 2, -65540, 1, 2, -4, 1, 2, 65532, 1, 2, 196604, 1, 2, 262140, 1, 2, 327676, 1, 2, 393212, 1, 1, -327683, 1, 2, -262147, 1, 2, -196611, 1, 2, -131075, 1, 2, -65539, 1, 2, -3, 1, 2, 65533, 1, 2, 196605, 1, 2, 262141, 1, 2, 327677, 1, 2, 393213, 1, 1, -327682, 1, 2, -262146, 1, 2, -196610, 1, 2, -131074, 1, 2, -65538, 1, 2, -2, 1, 2, 65534, 1, 2, 131070, 1, 2, 196606, 1, 2, 262142, 1, 2, 327678, 1, 2, 393214, 1, 1, -327681, 1, 2, -262145, 1, 2, -196609, 1, 2, -131073, 1, 2, -65537, 1, 2, -1, 1, 3, 65535, 1, 1, 131071, 1, 3, 196607, 1, 2, 262143, 1, 2, 327679, 1, 2, 393215, 1, 1, -393216, 1, 2, -327680, 1, 2, -262144, 1, 2, -196608, 1, 2, -131072, 1, 2, -65536, 1, 1, -393215, 1, 2, -327679, 1, 2, -262143, 1, 2, -196607, 1, 2, -131071, 1, 2, -65535, 1, 3, -393214, 1, 2, -327678, 1, 2, -262142, 1, 2, -196606, 1, 2, -131070, 1, 2, -65534, 1, 2, -393213, 1, 3, -327677, 1, 2, -262141, 1, 2, -196605, 1, 2, -131069, 1, 2, -65533, 1, 2, -327676, 1, 3, -262140, 1, 2, -196604, 1, 2, -131068, 1, 2, -65532, 1, 2, -262139, 1, 3, -196603, 1, 3, -131067, 1, 3, -65531, 1, 1, 131069, 1, 2, 131068, 1, 2)
+
+[node name="Camada1" parent="." instance=ExtResource("2_xy03y")]
+z_index = 1
+position = Vector2(-16, -16)
+layer_0/tile_data = PackedInt32Array(196611, 1, 1, 262147, 1, 2, 327682, 1, 2, 131076, 1, 2, 65541, 1, 2, -262139, 1, 2, -327676, 1, 2, -393213, 1, 3, 393212, 1, 5, 327675, 1, 3, 262138, 1, 3, 393213, 1, 5, 393214, 1, 5, 393215, 1, 5, 327680, 1, 5, 327681, 1, 5, -196603, 1, 2, -131067, 1, 2, -65531, 1, 5, 5, 1, 2, -327686, 1, 2, -327685, 1, 2, -327684, 1, 2, -327683, 1, 2, -327682, 1, 2, -327681, 1, 2, -393216, 1, 2, -393215, 1, 2, -393214, 1, 2, -262150, 1, 2, -196614, 1, 2, -131078, 1, 2, -65542, 1, 2, -6, 1, 2, 65530, 1, 2, 131066, 1, 2, 196602, 1, 2, -4, 1, 2, -65540, 1, 2, -131076, 1, 2, -196612, 1, 2, -262148, 1, 2, -262149, 1, 2, -196613, 1, 2, -131077, 1, 2, -65541, 1, 2, -5, 1, 2, 65531, 1, 2, 131067, 1, 2, 196603, 1, 2, 262139, 1, 2, 262140, 1, 2, 196604, 1, 2, 131068, 1, 2, 65532, 1, 2, 65533, 1, 2, -3, 1, 2, -65539, 1, 2, -131075, 1, 2, -196611, 1, 2, -262147, 1, 2, -262146, 1, 2, -196610, 1, 2, -131074, 1, 2, -65538, 1, 2, -2, 1, 2, 65534, 1, 2, 131070, 1, 2, 131069, 1, 2, 196605, 1, 2, 262141, 1, 2, 327677, 1, 5, 327676, 1, 2, 327678, 1, 5, 262142, 1, 5, 196606, 1, 3, 196607, 1, 3, 131071, 1, 2, 65535, 1, 2, -1, 1, 2, -65537, 1, 2, -131073, 1, 2, -196609, 1, 2, -262145, 1, 2, -327680, 1, 2, -262144, 1, 2, -196608, 1, 2, -131072, 1, 2, -65536, 1, 2, 0, 1, 2, 65536, 1, 2, 131072, 1, 2, 196608, 1, 2, 262143, 1, 5, 327679, 1, 5, 262144, 1, 5, 262145, 1, 2, 196609, 1, 2, 131073, 1, 2, 65537, 1, 1, 1, 1, 2, -65535, 1, 2, -131071, 1, 2, -196607, 1, 2, -262143, 1, 2, -327679, 1, 2, -327678, 1, 2, -196606, 1, 4, -131070, 1, 3, -65534, 1, 3, 2, 1, 2, 65538, 1, 1, 131074, 1, 1, 196610, 1, 1, 262146, 1, 2, 131075, 1, 2, 65539, 1, 2, 3, 1, 2, -65533, 1, 5, -131069, 1, 5, -196605, 1, 5, -262140, 1, 2, -196604, 1, 2, -131068, 1, 2, -65532, 1, 5, 4, 1, 2, 65540, 1, 2, -262142, 1, 2, -262141, 1, 2, -327677, 1, 2)
+
+[node name="Camada2" parent="." instance=ExtResource("2_xy03y")]
+z_index = 2
+position = Vector2(-16, -24)
+layer_0/tile_data = PackedInt32Array(-327686, 1, 2, -262150, 1, 2, -196614, 1, 2, -131078, 1, 2, -65542, 1, 2, -6, 1, 2, 65530, 1, 2, 131066, 1, 2, 196602, 1, 2, 262138, 1, 3, -327685, 1, 2, -262149, 1, 2, -196613, 1, 2, -131077, 1, 2, -65541, 1, 2, -5, 1, 2, 65531, 1, 2, 131067, 1, 2, 196603, 1, 2, 262139, 1, 2, 327675, 1, 2, -327684, 1, 2, -262148, 1, 2, -196612, 1, 2, -131076, 1, 2, -65540, 1, 2, -4, 1, 2, 65532, 1, 2, 131068, 1, 2, 196604, 1, 2, 262140, 1, 3, -327683, 1, 2, -262147, 1, 2, -196611, 1, 2, -131075, 1, 2, -65539, 1, 2, -3, 1, 2, 65533, 1, 2, 131069, 1, 2, 196605, 1, 3, -327682, 1, 2, -262146, 1, 2, -196610, 1, 2, -131074, 1, 2, -65538, 1, 2, -2, 1, 2, 65534, 1, 2, 131070, 1, 2, 196606, 1, 3, -327681, 1, 2, -262145, 1, 2, -196609, 1, 2, -131073, 1, 2, -65537, 1, 2, -1, 1, 2, 65535, 1, 2, 131071, 1, 2, 196607, 1, 3, -393216, 1, 2, -327680, 1, 2, -262144, 1, 2, -196608, 1, 2, -131072, 1, 2, -65536, 1, 2, 0, 1, 2, 65536, 1, 2, 131072, 1, 2, -393215, 1, 2, -327679, 1, 2, -262143, 1, 3, -196607, 1, 3, -131071, 1, 2, -65535, 1, 2, 1, 1, 2, 65537, 1, 1, -393214, 1, 2, -327678, 1, 3, -196606, 1, 4, -131070, 1, 3, -65534, 1, 3, -393213, 1, 2)
+
+[node name="Camada3" parent="." instance=ExtResource("2_xy03y")]
+z_index = 3
+position = Vector2(-16, -32)
+layer_0/tile_data = PackedInt32Array(-327686, 1, 2, -262150, 1, 2, -196614, 1, 2, -131078, 1, 2, -65542, 1, 2, -6, 1, 2, 65530, 1, 2, 131066, 1, 2, 196602, 1, 2, 262138, 1, 2, -327685, 1, 2, -262149, 1, 2, -196613, 1, 2, -131077, 1, 2, -65541, 1, 2, -5, 1, 2, 65531, 1, 2, 131067, 1, 2, 196603, 1, 2, 262139, 1, 2, -327684, 1, 2, -262148, 1, 2, -196612, 1, 2, -131076, 1, 2, -65540, 1, 2, -4, 1, 2, 65532, 1, 2, 131068, 1, 2, 196604, 1, 2, 262140, 1, 2, -327683, 1, 2, -262147, 1, 2, -196611, 1, 2, -131075, 1, 2, -65539, 1, 2, -3, 1, 2, 65533, 1, 2, 131069, 1, 2, 196605, 1, 3, -327682, 1, 2, -262146, 1, 2, -196610, 1, 2, -131074, 1, 2, -65538, 1, 2, -2, 1, 2, 65534, 1, 2, 131070, 1, 2, 196606, 1, 3, -327681, 1, 2, -262145, 1, 2, -196609, 1, 2, -131073, 1, 2, -65537, 1, 2, -1, 1, 2, 65535, 1, 2, 131071, 1, 2, 196607, 1, 2, -393216, 1, 2, -327680, 1, 2, -262144, 1, 2, -196608, 1, 2, -131072, 1, 2, -65536, 1, 2, 0, 1, 1, 65536, 1, 1, -393215, 1, 2, -327679, 1, 2, -262143, 1, 3, -196607, 1, 1, -131071, 1, 2, -65535, 1, 2, -393214, 1, 3, -327678, 1, 3, -196606, 1, 4, -131070, 1, 3, -65534, 1, 2)
+
+[node name="Camada4" parent="." instance=ExtResource("2_xy03y")]
+z_index = 4
+position = Vector2(-16, -40)
+layer_0/tile_data = PackedInt32Array(-327686, 1, 2, -262150, 1, 2, -196614, 1, 2, -131078, 1, 2, -65542, 1, 2, -6, 1, 2, 65530, 1, 2, 131066, 1, 2, 196602, 1, 3, -327685, 1, 2, -262149, 1, 2, -196613, 1, 2, -131077, 1, 2, -65541, 1, 2, -5, 1, 2, 65531, 1, 2, 131067, 1, 2, 196603, 1, 2, -327684, 1, 2, -262148, 1, 2, -196612, 1, 2, -131076, 1, 2, -65540, 1, 2, -4, 1, 2, 65532, 1, 2, 131068, 1, 2, 196604, 1, 2, -327683, 1, 2, -262147, 1, 2, -196611, 1, 2, -131075, 1, 2, -65539, 1, 2, -3, 1, 2, 65533, 1, 2, 131069, 1, 2, 196605, 1, 3, -327682, 1, 2, -262146, 1, 2, -196610, 1, 2, -131074, 1, 2, -65538, 1, 2, -2, 1, 2, 65534, 1, 2, 131070, 1, 2, 196606, 1, 3, -327681, 1, 2, -262145, 1, 2, -196609, 1, 2, -131073, 1, 2, -65537, 1, 2, -1, 1, 2, 65535, 1, 2, 131071, 1, 2, -393216, 1, 2, -327680, 1, 2, -262144, 1, 2, -196608, 1, 2, -131072, 1, 2, -65536, 1, 1, -393215, 1, 2, -327679, 1, 2, -262143, 1, 3, -196607, 1, 4, -131071, 1, 2, -393214, 1, 2, -327678, 1, 2, -196606, 1, 5, -131070, 1, 2)
+
+[node name="Camada5" parent="." instance=ExtResource("2_xy03y")]
+z_index = 5
+position = Vector2(-16, -48)
+layer_0/tile_data = PackedInt32Array(-327686, 1, 2, -262150, 1, 2, -196614, 1, 2, -131078, 1, 2, -65542, 1, 2, -6, 1, 2, 65530, 1, 2, 131066, 1, 2, 196602, 1, 2, -327685, 1, 2, -262149, 1, 2, -196613, 1, 2, -131077, 1, 2, -65541, 1, 2, -5, 1, 2, 65531, 1, 2, 131067, 1, 2, -327684, 1, 2, -262148, 1, 2, -196612, 1, 2, -131076, 1, 2, -65540, 1, 2, -4, 1, 2, 65532, 1, 2, 131068, 1, 2, -327683, 1, 2, -262147, 1, 2, -196611, 1, 2, -131075, 1, 2, -65539, 1, 2, -3, 1, 2, 65533, 1, 2, 131069, 1, 2, 196605, 1, 2, -327682, 1, 2, -262146, 1, 2, -196610, 1, 2, -131074, 1, 2, -65538, 1, 2, -2, 1, 1, 65534, 1, 2, 131070, 1, 2, 196606, 1, 2, -327681, 1, 2, -262145, 1, 2, -196609, 1, 2, -131073, 1, 4, -65537, 1, 2, -1, 1, 1, 65535, 1, 2, -393216, 1, 2, -327680, 1, 2, -262144, 1, 2, -196608, 1, 5, -131072, 1, 2, -393215, 1, 2, -327679, 1, 2, -262143, 1, 2, -196607, 1, 5, -131071, 1, 2, -393214, 1, 2)
+
+[node name="Camada6" parent="." instance=ExtResource("2_xy03y")]
+z_index = 6
+position = Vector2(-16, -56)
+layer_0/tile_data = PackedInt32Array(-327686, 1, 2, -262150, 1, 2, -196614, 1, 2, -131078, 1, 2, -65542, 1, 2, -6, 1, 2, 65530, 1, 2, 131066, 1, 2, -327685, 1, 2, -262149, 1, 2, -196613, 1, 2, -131077, 1, 2, -65541, 1, 2, -5, 1, 2, 65531, 1, 2, -327684, 1, 2, -262148, 1, 2, -196612, 1, 2, -131076, 1, 2, -65540, 1, 2, -4, 1, 2, 65532, 1, 2, -327683, 1, 2, -262147, 1, 2, -196611, 1, 2, -131075, 1, 1, -65539, 1, 1, -3, 1, 2, -327682, 1, 2, -262146, 1, 2, -196610, 1, 4, -131074, 1, 5, -65538, 1, 1, -327681, 1, 2, -262145, 1, 2, -196609, 1, 2, -131073, 1, 5, -65537, 1, 2, -393216, 1, 2, -327680, 1, 2, -262144, 1, 2)
+
+[node name="Camada7" parent="." instance=ExtResource("2_xy03y")]
+z_index = 7
+position = Vector2(-16, -64)
+layer_0/tile_data = PackedInt32Array(-327686, 1, 2, -262150, 1, 1, -196614, 1, 1, -131078, 1, 2, -65542, 1, 2, -6, 1, 2, 65530, 1, 2, -327685, 1, 1, -262149, 1, 1, -196613, 1, 1, -131077, 1, 1, -65541, 1, 2, -5, 1, 2, -327684, 1, 1, -262148, 1, 1, -196612, 1, 1, -131076, 1, 1, -65540, 1, 2, -327683, 1, 2, -262147, 1, 1, -196611, 1, 1, -327682, 1, 5, -262146, 1, 5, -196610, 1, 5, -327681, 1, 2, -262145, 1, 2, -196609, 1, 2, -393216, 1, 2)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+z_index = 999
+limit_smoothed = true
+position_smoothing_enabled = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 10.0
+offset_bottom = 10.0
+scale = Vector2(0.5, 0.5)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Menu" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -56.0
+offset_right = 88.0
+offset_bottom = 8.0
+grow_vertical = 0
+scale = Vector2(0.75, 0.75)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Menu"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -152.0
+offset_right = 356.0
+grow_vertical = 0
+
+[node name="Energia" type="TextureProgressBar" parent="CanvasLayer/Menu/VBoxContainer"]
+texture_repeat = 2
+custom_minimum_size = Vector2(128, 16)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+value = 50.0
+texture_under = SubResource("AtlasTexture_kip3x")
+texture_progress = SubResource("AtlasTexture_qc5xo")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Menu/VBoxContainer"]
+layout_mode = 2
+
+[node name="GridContainer2" type="GridContainer" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="Button" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+toggle_mode = true
+action_mode = 0
+button_mask = 7
+keep_pressed_outside = true
+icon = ExtResource("3_q4y53")
+
+[node name="Button2" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+toggle_mode = true
+action_mode = 0
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_3iw7o")
+
+[node name="Button3" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+toggle_mode = true
+action_mode = 0
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_yr3ye")
+
+[node name="Button4" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+toggle_mode = true
+action_mode = 0
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_sewe6")
+
+[node name="Button5" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+toggle_mode = true
+action_mode = 0
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_ur06x")
+
+[node name="Button6" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer2"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+toggle_mode = true
+action_mode = 0
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_g3x2o")
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+columns = 4
+
+[node name="Button" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+toggle_mode = true
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_cn0qx")
+expand_icon = true
+
+[node name="Button2" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+toggle_mode = true
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_scvmj")
+expand_icon = true
+
+[node name="Button3" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+toggle_mode = true
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_wlfvm")
+expand_icon = true
+
+[node name="Button4" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+toggle_mode = true
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_3j5ig")
+expand_icon = true
+
+[node name="Button5" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+toggle_mode = true
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_0glpb")
+expand_icon = true
+
+[node name="Button6" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+toggle_mode = true
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_eu0tb")
+expand_icon = true
+
+[node name="Button7" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+toggle_mode = true
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_7a2ok")
+expand_icon = true
+
+[node name="Button8" type="Button" parent="CanvasLayer/Menu/VBoxContainer/HBoxContainer/GridContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+toggle_mode = true
+button_mask = 7
+keep_pressed_outside = true
+icon = SubResource("AtlasTexture_i4e72")
+expand_icon = true
+
+[node name="Bloco" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -48.0
+offset_top = 8.0
+offset_right = -8.0
+offset_bottom = 48.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Bloco"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -106.0
+offset_bottom = 35.0
+grow_horizontal = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Bloco"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -199.0
+offset_bottom = 32.0
+grow_horizontal = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Bloco/HBoxContainer"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+
+[node name="Camada" parent="CanvasLayer/Bloco/HBoxContainer/TextureRect" instance=ExtResource("2_xy03y")]
+position = Vector2(16, 4)
+layer_0/tile_data = PackedInt32Array(0, 1, 0)
+
+[node name="Label" type="Label" parent="CanvasLayer/Bloco/HBoxContainer"]
+custom_minimum_size = Vector2(64, 0)
+layout_mode = 2
+text = "Terra"
+label_settings = SubResource("LabelSettings_n13uw")
+
+[node name="Label2" type="Label" parent="CanvasLayer/Bloco/HBoxContainer"]
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+text = "(-20,-20,20)"
+label_settings = SubResource("LabelSettings_n13uw")
+horizontal_alignment = 2
+
+[node name="Entidade" type="Control" parent="CanvasLayer"]
+visible = false
+layout_mode = 3
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -48.0
+offset_top = -48.0
+offset_right = -8.0
+offset_bottom = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Entidade"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -175.0
+offset_top = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Entidade"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -184.0
+offset_top = -64.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Entidade/HBoxContainer2"]
+custom_minimum_size = Vector2(64, 32)
+layout_mode = 2
+texture = ExtResource("3_2bmhb")
+
+[node name="ProgressBar" type="ProgressBar" parent="CanvasLayer/Entidade/HBoxContainer2"]
+clip_contents = true
+custom_minimum_size = Vector2(64, 16)
+layout_direction = 2
+layout_mode = 2
+size_flags_vertical = 4
+value = 100.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="CanvasLayer/Entidade/HBoxContainer2"]
+custom_minimum_size = Vector2(48, 0)
+layout_mode = 2
+text = "50/50"
+label_settings = SubResource("LabelSettings_jynjx")
+horizontal_alignment = 2
+
+[node name="XXX" parent="." instance=ExtResource("2_xy03y")]
+position = Vector2(-96, -160)
+scale = Vector2(4, 4)
