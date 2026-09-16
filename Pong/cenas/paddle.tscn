@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://s175pl2u22qo"]
+
+[node name="paddle" type="Node2D" unique_id=360501871 groups=["paddle"]]
+metadata/player = 0
+metadata/horizontal_orientation = false
+metadata/default_speed = 180
+
+[node name="image" type="Polygon2D" parent="." unique_id=942806219]
+color = Color(0.91485, 0.893, 0.95, 1)
+polygon = PackedVector2Array(0, 0, 2, 0, 2, 32, 0, 32)

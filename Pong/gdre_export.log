@@ -1,0 +1,35 @@
+GDRE Tools v2.7.0-beta.2
+Windows 10.0.26200, AMD Radeon RX 7600, vulkan
+WARNING: Could not find embedded pck in EXE, found pck file, loading from: C:/Users/Osti/Documents/Pong/Pong.pck
+   at: GDRESettings::sort_and_validate_pck_files (modules\gdsdecomp\utility\gdre_settings.cpp:612)
+Opening file: C:/Users/Osti/Documents/Pong/Pong.pck
+Loaded 17 imported files
+Detected Engine Version: 4.7.1
+Detected Bytecode Revision: 4.5.0-stable (ebc36a7)
+Verified 38 files, no errors detected!
+Extracted 38 files, no errors detected!
+Saved project config.
+
+
+********************************EXPORT REPORT********************************
+
+Totals:                                 
+Decompiled scripts:                     1
+Scripts not decompiled:                 0
+Imported resources for export session:  17
+Successfully converted:                 17
+Lossy:                                  10
+Rewrote metadata:                       12
+Non-importable conversions:             0
+Not converted:                          0
+Failed conversions:                     0
+-------------
+
+
+
+------------------------------------------------------------------------------------
+
+Use Godot editor version 4.7.1 to edit the project.
+
+*******************************************************************************
+
